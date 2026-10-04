@@ -1,0 +1,103 @@
+[
+  {
+    "id": "dos_001",
+    "attack": "DoS",
+    "title": "Denial of Service Detection",
+    "description": "A denial-of-service attack attempts to make a service or network resource unavailable by generating excessive or abnormal traffic.",
+    "indicators": [
+      "Very high packet rate",
+      "Large number of short-duration flows",
+      "Repeated traffic toward the same destination service",
+      "Abnormal flow timing patterns"
+    ],
+    "investigation": [
+      "Identify source IP addresses generating the traffic",
+      "Check packet and byte rates over time",
+      "Identify the targeted destination service and port",
+      "Check whether the service experienced degradation",
+      "Correlate the traffic with firewall and IDS logs"
+    ],
+    "mitigation": [
+      "Apply appropriate rate limiting",
+      "Block or restrict confirmed malicious sources",
+      "Use network filtering or upstream protection",
+      "Monitor the targeted service for continued abnormal traffic"
+    ]
+  },
+  {
+    "id": "bot_001",
+    "attack": "Bot",
+    "title": "Bot Activity Detection",
+    "description": "Bot activity occurs when compromised systems are controlled or coordinated by malicious infrastructure.",
+    "indicators": [
+      "Repeated communication patterns",
+      "Unusual outbound connections",
+      "Periodic network activity",
+      "Unexpected communication with external hosts"
+    ],
+    "investigation": [
+      "Identify the affected internal host",
+      "Inspect destination IP addresses and domains",
+      "Look for repeated communication patterns",
+      "Review DNS and network logs",
+      "Check the endpoint for signs of compromise"
+    ],
+    "mitigation": [
+      "Isolate the affected endpoint when appropriate",
+      "Block confirmed malicious destinations",
+      "Investigate endpoint processes and persistence",
+      "Reset compromised credentials if required"
+    ]
+  },
+  {
+    "id": "infiltration_001",
+    "attack": "Infiltration",
+    "title": "Network Infiltration Detection",
+    "description": "Infiltration refers to unauthorized access or malicious activity in which an attacker gains access to a network or system.",
+    "indicators": [
+      "Unexpected internal network communication",
+      "Abnormal connection patterns",
+      "Suspicious traffic between internal systems",
+      "Unusual data transfer behavior"
+    ],
+    "investigation": [
+      "Identify the suspected source and destination hosts",
+      "Determine when the suspicious activity began",
+      "Review authentication and network logs",
+      "Investigate unusual internal connections",
+      "Check affected systems for additional indicators of compromise"
+    ],
+    "mitigation": [
+      "Isolate compromised systems",
+      "Block malicious communication paths",
+      "Investigate the initial access vector",
+      "Remove persistence mechanisms",
+      "Continue monitoring affected systems"
+    ]
+  },
+  {
+    "id": "web_attack_001",
+    "attack": "Web Attack",
+    "title": "Web Attack Detection",
+    "description": "Web attacks target web applications or services using malicious requests or abnormal application traffic.",
+    "indicators": [
+      "Unusual HTTP request patterns",
+      "Repeated requests against application endpoints",
+      "Suspicious destination ports",
+      "Abnormal request frequency"
+    ],
+    "investigation": [
+      "Identify the targeted web service",
+      "Review HTTP and application logs",
+      "Identify suspicious source addresses",
+      "Look for repeated or automated requests",
+      "Check whether sensitive endpoints were targeted"
+    ],
+    "mitigation": [
+      "Apply web application filtering",
+      "Rate-limit suspicious sources",
+      "Block confirmed malicious traffic",
+      "Review and strengthen application security controls"
+    ]
+  }
+]

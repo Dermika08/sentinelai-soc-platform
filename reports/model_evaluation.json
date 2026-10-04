@@ -1,0 +1,115 @@
+{
+    "dataset": "CSE-CIC-IDS2018",
+    "target": "Bot vs Benign",
+    "training_rows": 837659,
+    "testing_rows": 209415,
+    "features": [
+        "Dst_Port",
+        "Protocol",
+        "Tot_Fwd_Pkts",
+        "Tot_Bwd_Pkts",
+        "TotLen_Fwd_Pkts",
+        "TotLen_Bwd_Pkts",
+        "Fwd_Pkt_Len_Max",
+        "Fwd_Pkt_Len_Min",
+        "Fwd_Pkt_Len_Mean",
+        "Fwd_Pkt_Len_Std",
+        "Bwd_Pkt_Len_Max",
+        "Bwd_Pkt_Len_Min",
+        "Bwd_Pkt_Len_Mean",
+        "Bwd_Pkt_Len_Std",
+        "Flow_Byts_per_s",
+        "Flow_Pkts_per_s",
+        "Flow_IAT_Mean",
+        "Flow_IAT_Std",
+        "Flow_IAT_Max",
+        "Flow_IAT_Min",
+        "Fwd_IAT_Tot",
+        "Fwd_IAT_Mean",
+        "Fwd_IAT_Std",
+        "Fwd_IAT_Max",
+        "Fwd_IAT_Min",
+        "Bwd_IAT_Tot",
+        "Bwd_IAT_Mean",
+        "Bwd_IAT_Std",
+        "Bwd_IAT_Max",
+        "Bwd_IAT_Min",
+        "Fwd_PSH_Flags",
+        "Fwd_Header_Len",
+        "Bwd_Header_Len",
+        "Fwd_Pkts_per_s",
+        "Bwd_Pkts_per_s",
+        "Pkt_Len_Min",
+        "Pkt_Len_Max",
+        "Pkt_Len_Mean",
+        "Pkt_Len_Std",
+        "Pkt_Len_Var",
+        "FIN_Flag_Cnt",
+        "SYN_Flag_Cnt",
+        "RST_Flag_Cnt",
+        "PSH_Flag_Cnt",
+        "ACK_Flag_Cnt",
+        "URG_Flag_Cnt",
+        "ECE_Flag_Cnt",
+        "Down_per_Up_Ratio",
+        "Pkt_Size_Avg",
+        "Fwd_Seg_Size_Avg",
+        "Bwd_Seg_Size_Avg",
+        "Subflow_Fwd_Pkts",
+        "Subflow_Fwd_Byts",
+        "Subflow_Bwd_Pkts",
+        "Subflow_Bwd_Byts",
+        "Init_Fwd_Win_Byts",
+        "Init_Bwd_Win_Byts",
+        "Fwd_Act_Data_Pkts",
+        "Fwd_Seg_Size_Min",
+        "Active_Mean",
+        "Active_Std",
+        "Active_Max",
+        "Active_Min",
+        "Idle_Mean",
+        "Idle_Std",
+        "Idle_Max",
+        "Idle_Min"
+    ],
+    "models": [
+        {
+            "model": "Logistic Regression",
+            "accuracy": 0.9870353126566865,
+            "precision": 0.9547859870051577,
+            "recall": 0.999736985148428,
+            "f1": 0.9767445844432834,
+            "roc_auc": 0.9964173199374292,
+            "confusion_matrix": [
+                [
+                    149684,
+                    2700
+                ],
+                [
+                    15,
+                    57016
+                ]
+            ]
+        },
+        {
+            "model": "Random Forest",
+            "accuracy": 0.9999522479287539,
+            "precision": 0.9999649276633056,
+            "recall": 0.9998597254124949,
+            "f1": 0.9999123237707793,
+            "roc_auc": 0.9999999555842551,
+            "confusion_matrix": [
+                [
+                    152382,
+                    2
+                ],
+                [
+                    8,
+                    57023
+                ]
+            ]
+        }
+    ],
+    "selected_model": "Random Forest",
+    "selection_metric": "F1 score"
+}

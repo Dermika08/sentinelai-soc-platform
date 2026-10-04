@@ -1,0 +1,165 @@
+{
+    "model": "Random Forest",
+    "task": "Malicious attack family classification",
+    "classes": [
+        "Bot",
+        "DoS",
+        "Infiltration"
+    ],
+    "training_rows": 784844,
+    "testing_rows": 196212,
+    "features": [
+        "Dst_Port",
+        "Protocol",
+        "Tot_Fwd_Pkts",
+        "Tot_Bwd_Pkts",
+        "TotLen_Fwd_Pkts",
+        "TotLen_Bwd_Pkts",
+        "Fwd_Pkt_Len_Max",
+        "Fwd_Pkt_Len_Min",
+        "Fwd_Pkt_Len_Mean",
+        "Fwd_Pkt_Len_Std",
+        "Bwd_Pkt_Len_Max",
+        "Bwd_Pkt_Len_Min",
+        "Bwd_Pkt_Len_Mean",
+        "Bwd_Pkt_Len_Std",
+        "Flow_Byts_per_s",
+        "Flow_Pkts_per_s",
+        "Flow_IAT_Mean",
+        "Flow_IAT_Std",
+        "Flow_IAT_Max",
+        "Flow_IAT_Min",
+        "Fwd_IAT_Tot",
+        "Fwd_IAT_Mean",
+        "Fwd_IAT_Std",
+        "Fwd_IAT_Max",
+        "Fwd_IAT_Min",
+        "Bwd_IAT_Tot",
+        "Bwd_IAT_Mean",
+        "Bwd_IAT_Std",
+        "Bwd_IAT_Max",
+        "Bwd_IAT_Min",
+        "Fwd_PSH_Flags",
+        "Fwd_Header_Len",
+        "Bwd_Header_Len",
+        "Fwd_Pkts_per_s",
+        "Bwd_Pkts_per_s",
+        "Pkt_Len_Min",
+        "Pkt_Len_Max",
+        "Pkt_Len_Mean",
+        "Pkt_Len_Std",
+        "Pkt_Len_Var",
+        "FIN_Flag_Cnt",
+        "SYN_Flag_Cnt",
+        "RST_Flag_Cnt",
+        "PSH_Flag_Cnt",
+        "ACK_Flag_Cnt",
+        "URG_Flag_Cnt",
+        "ECE_Flag_Cnt",
+        "Down_per_Up_Ratio",
+        "Pkt_Size_Avg",
+        "Fwd_Seg_Size_Avg",
+        "Bwd_Seg_Size_Avg",
+        "Subflow_Fwd_Pkts",
+        "Subflow_Fwd_Byts",
+        "Subflow_Bwd_Pkts",
+        "Subflow_Bwd_Byts",
+        "Init_Fwd_Win_Byts",
+        "Init_Bwd_Win_Byts",
+        "Fwd_Act_Data_Pkts",
+        "Fwd_Seg_Size_Min",
+        "Active_Mean",
+        "Active_Std",
+        "Active_Max",
+        "Active_Min",
+        "Idle_Mean",
+        "Idle_Std",
+        "Idle_Max",
+        "Idle_Min"
+    ],
+    "accuracy": 0.9999694208305302,
+    "weighted_precision": 0.9999694226646426,
+    "weighted_recall": 0.9999694208305302,
+    "weighted_f1": 0.999969421384805,
+    "macro_f1": 0.9999288057796383,
+    "confusion_matrix": [
+        [
+            57234,
+            0,
+            4
+        ],
+        [
+            0,
+            120361,
+            0
+        ],
+        [
+            2,
+            0,
+            18611
+        ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n         Bot       1.00      1.00      1.00     57238\n         DoS       1.00      1.00      1.00    120361\nInfiltration       1.00      1.00      1.00     18613\n\n    accuracy                           1.00    196212\n   macro avg       1.00      1.00      1.00    196212\nweighted avg       1.00      1.00      1.00    196212\n",
+    "top_features": [
+        {
+            "feature": "Fwd_Seg_Size_Min",
+            "importance": 0.16095569576262797
+        },
+        {
+            "feature": "Dst_Port",
+            "importance": 0.15050810090456557
+        },
+        {
+            "feature": "Init_Fwd_Win_Byts",
+            "importance": 0.06672105010375157
+        },
+        {
+            "feature": "Fwd_Header_Len",
+            "importance": 0.058857935049698724
+        },
+        {
+            "feature": "Fwd_IAT_Min",
+            "importance": 0.052641137800224544
+        },
+        {
+            "feature": "Fwd_IAT_Tot",
+            "importance": 0.04464768215381151
+        },
+        {
+            "feature": "Fwd_IAT_Max",
+            "importance": 0.044330041537191035
+        },
+        {
+            "feature": "Fwd_IAT_Mean",
+            "importance": 0.04280657902609707
+        },
+        {
+            "feature": "Flow_IAT_Min",
+            "importance": 0.029982367795622602
+        },
+        {
+            "feature": "Flow_IAT_Mean",
+            "importance": 0.029268522812649106
+        },
+        {
+            "feature": "Fwd_Pkts_per_s",
+            "importance": 0.02641383421701605
+        },
+        {
+            "feature": "Flow_Pkts_per_s",
+            "importance": 0.025986093304989705
+        },
+        {
+            "feature": "Flow_IAT_Max",
+            "importance": 0.025369723704497166
+        },
+        {
+            "feature": "Bwd_Pkts_per_s",
+            "importance": 0.020081066918304448
+        },
+        {
+            "feature": "Tot_Fwd_Pkts",
+            "importance": 0.0179526916194445
+        }
+    ]
+}

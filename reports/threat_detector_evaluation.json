@@ -1,0 +1,152 @@
+{
+    "model": "Random Forest",
+    "task": "Benign vs Malicious",
+    "training_rows": 1265297,
+    "testing_rows": 316325,
+    "features": [
+        "Dst_Port",
+        "Protocol",
+        "Tot_Fwd_Pkts",
+        "Tot_Bwd_Pkts",
+        "TotLen_Fwd_Pkts",
+        "TotLen_Bwd_Pkts",
+        "Fwd_Pkt_Len_Max",
+        "Fwd_Pkt_Len_Min",
+        "Fwd_Pkt_Len_Mean",
+        "Fwd_Pkt_Len_Std",
+        "Bwd_Pkt_Len_Max",
+        "Bwd_Pkt_Len_Min",
+        "Bwd_Pkt_Len_Mean",
+        "Bwd_Pkt_Len_Std",
+        "Flow_Byts_per_s",
+        "Flow_Pkts_per_s",
+        "Flow_IAT_Mean",
+        "Flow_IAT_Std",
+        "Flow_IAT_Max",
+        "Flow_IAT_Min",
+        "Fwd_IAT_Tot",
+        "Fwd_IAT_Mean",
+        "Fwd_IAT_Std",
+        "Fwd_IAT_Max",
+        "Fwd_IAT_Min",
+        "Bwd_IAT_Tot",
+        "Bwd_IAT_Mean",
+        "Bwd_IAT_Std",
+        "Bwd_IAT_Max",
+        "Bwd_IAT_Min",
+        "Fwd_PSH_Flags",
+        "Fwd_Header_Len",
+        "Bwd_Header_Len",
+        "Fwd_Pkts_per_s",
+        "Bwd_Pkts_per_s",
+        "Pkt_Len_Min",
+        "Pkt_Len_Max",
+        "Pkt_Len_Mean",
+        "Pkt_Len_Std",
+        "Pkt_Len_Var",
+        "FIN_Flag_Cnt",
+        "SYN_Flag_Cnt",
+        "RST_Flag_Cnt",
+        "PSH_Flag_Cnt",
+        "ACK_Flag_Cnt",
+        "URG_Flag_Cnt",
+        "ECE_Flag_Cnt",
+        "Down_per_Up_Ratio",
+        "Pkt_Size_Avg",
+        "Fwd_Seg_Size_Avg",
+        "Bwd_Seg_Size_Avg",
+        "Subflow_Fwd_Pkts",
+        "Subflow_Fwd_Byts",
+        "Subflow_Bwd_Pkts",
+        "Subflow_Bwd_Byts",
+        "Init_Fwd_Win_Byts",
+        "Init_Bwd_Win_Byts",
+        "Fwd_Act_Data_Pkts",
+        "Fwd_Seg_Size_Min",
+        "Active_Mean",
+        "Active_Std",
+        "Active_Max",
+        "Active_Min",
+        "Idle_Mean",
+        "Idle_Std",
+        "Idle_Max",
+        "Idle_Min"
+    ],
+    "accuracy": 0.9543823599146447,
+    "precision": 0.9931729324939131,
+    "recall": 0.9329122628294919,
+    "f1": 0.962099921730954,
+    "roc_auc": 0.9869471080478798,
+    "confusion_matrix": [
+        [
+            118741,
+            1259
+        ],
+        [
+            13171,
+            183154
+        ]
+    ],
+    "top_features": [
+        {
+            "feature": "Bwd_Seg_Size_Avg",
+            "importance": 0.06760433934357905
+        },
+        {
+            "feature": "Bwd_Pkt_Len_Mean",
+            "importance": 0.06282275639939969
+        },
+        {
+            "feature": "Flow_IAT_Max",
+            "importance": 0.06208780445744327
+        },
+        {
+            "feature": "Fwd_Pkts_per_s",
+            "importance": 0.061999164682633216
+        },
+        {
+            "feature": "Dst_Port",
+            "importance": 0.055366306547221265
+        },
+        {
+            "feature": "Fwd_IAT_Max",
+            "importance": 0.05240590827233689
+        },
+        {
+            "feature": "Flow_IAT_Mean",
+            "importance": 0.05215156713660833
+        },
+        {
+            "feature": "Fwd_Seg_Size_Min",
+            "importance": 0.04426577371118566
+        },
+        {
+            "feature": "Init_Fwd_Win_Byts",
+            "importance": 0.04229145968226003
+        },
+        {
+            "feature": "Pkt_Size_Avg",
+            "importance": 0.03404838710305771
+        },
+        {
+            "feature": "Fwd_IAT_Tot",
+            "importance": 0.033392888903486094
+        },
+        {
+            "feature": "Flow_Pkts_per_s",
+            "importance": 0.031442741243655696
+        },
+        {
+            "feature": "Fwd_Header_Len",
+            "importance": 0.030421031658005044
+        },
+        {
+            "feature": "Fwd_IAT_Mean",
+            "importance": 0.028700911654701827
+        },
+        {
+            "feature": "Flow_Byts_per_s",
+            "importance": 0.02580022411747833
+        }
+    ]
+}
